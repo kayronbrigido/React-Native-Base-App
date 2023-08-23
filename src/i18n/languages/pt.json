@@ -1,0 +1,14 @@
+{
+  "GENERAL": {
+    "YES": "Sim",
+    "NO": "Não",
+    "CANCEL": "Cancelar",
+    "CONFIRM": "Confirmar",
+    "NEXT": "Avançar",
+    "BACK": "Voltar"
+  },
+  "ERROR": {
+    "INVALID_CREDENTIALS": "Credenciais inválidas",
+    "EMPTY_FIELD": "Campo vazio"
+  }
+}

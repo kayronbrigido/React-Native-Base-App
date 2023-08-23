@@ -1,8 +1,13 @@
 import * as S from './Text.styles';
 
-const Text: React.FC = () => {
+
+interface ITextProps {
+  text?: string
+} 
+
+const Text: React.FC<ITextProps> = ({ text = ''}) => {
   return(
-    <S.Text>Texto aqui</S.Text>
+    <S.Text>{text}</S.Text>
   )
 }
 

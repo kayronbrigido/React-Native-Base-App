@@ -1,18 +1,14 @@
 import React from 'react';
-import { TouchableOpacity, View } from "react-native";
-import { useAppSelector } from './hooks/useAppSelector';
-import { startLoading, stopLoading } from './store/redux/loading/loadingSlice';
-import useDispatch from './hooks/useDispatch';
+import { View } from "react-native";
 import Text from './components/Text/Text';
+import './i18n'
+import { translate } from './services/translate';
 
 const AppContent: React.FC = () => {
 
-  const { isLoading, loadingCounter } = useAppSelector((state) => state.loading)
-  const dispatch = useDispatch()
-
   return (
     <View>
-      <Text />
+      <Text text={translate('GENERAL.YES')} />
     </View>
   )
 }

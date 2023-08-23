@@ -1,0 +1,14 @@
+{
+  "GENERAL": {
+    "YES": "Yes",
+    "NO": "No",
+    "CANCEL": "Cancel",
+    "CONFIRM": "Confirm",
+    "NEXT": "Next",
+    "BACK": "Back"
+  },
+  "ERROR": {
+    "INVALID_CREDENTIALS": "Invalid credentials",
+    "EMPTY_FIELD": "Empty field"
+  }
+}
