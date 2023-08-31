@@ -10,5 +10,15 @@
   "ERROR": {
     "INVALID_CREDENTIALS": "Credenciais inválidas",
     "EMPTY_FIELD": "Campo vazio"
+  },
+  "SCREEN": {
+    "LOGIN": {
+      "TITLE": "Login",
+      "LOGIN": "Entrar",
+      "SIGNUP": "Cadastrar"
+    },
+    "SIGNUP": {
+      "TITLE": "Cadastro"
+    }
   }
 }

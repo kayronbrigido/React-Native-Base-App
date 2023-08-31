@@ -1,16 +1,19 @@
 import React from 'react';
-import { View } from "react-native";
-import Text from './components/Text/Text';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import MainNavigation from './MainNavigation';
+import { navigationRef } from '@src/services/navigationService';
 import './i18n'
-import { translate } from './services/translate';
 
 const AppContent: React.FC = () => {
 
   return (
-    <View>
-      <Text text={translate('GENERAL.YES')} />
-    </View>
-  )
+    <SafeAreaProvider>
+      <NavigationContainer ref={navigationRef}>
+        <MainNavigation />
+      </NavigationContainer>
+    </SafeAreaProvider>
+  );
 }
 
 export default AppContent;

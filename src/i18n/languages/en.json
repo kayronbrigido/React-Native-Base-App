@@ -10,5 +10,15 @@
   "ERROR": {
     "INVALID_CREDENTIALS": "Invalid credentials",
     "EMPTY_FIELD": "Empty field"
+  },
+  "SCREEN": {
+    "LOGIN": {
+      "TITLE": "Login",
+      "LOGIN": "Login",
+      "SIGNUP": "Signup"
+    },
+    "SIGNUP": {
+      "TITLE": "Signup"
+    }
   }
 }
