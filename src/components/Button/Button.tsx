@@ -15,7 +15,7 @@ interface IButtonProps {
   marginTop?: number,
   paddingHorizontal?: number,
   paddingVertical?: number,
-
+  testID?: string,
 }
 
 const Button: React.FC<IButtonProps> = ({
@@ -29,11 +29,13 @@ const Button: React.FC<IButtonProps> = ({
   marginBottom,
   marginTop,
   paddingHorizontal,
-  paddingVertical
+  paddingVertical,
+  testID
 }) => {
 
   return (
     <S.Touch
+      testID={testID}
       onPress={onPress}
       style={buttonStyle}
       disabled={disable}

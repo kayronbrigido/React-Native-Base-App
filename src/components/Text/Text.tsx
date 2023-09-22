@@ -4,15 +4,19 @@ import * as S from './Text.styles';
 
 interface ITextProps {
   text?: string
-  style?: TextStyle 
+  style?: TextStyle
+  testID?: string
 } 
 
 const Text: React.FC<ITextProps> = ({ 
   text = '',
-  style
+  style,
+  testID
 }) => {
   return(
-    <S.Text style={style}>{text}</S.Text>
+    <S.Text 
+    testID={testID}
+    style={style}>{text}</S.Text>
   )
 }
 

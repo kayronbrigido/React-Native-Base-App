@@ -6,13 +6,18 @@ import navigationService, { Stacks } from '@src/services/navigationService';
 
 const LoginScreen: React.FC = () => {
 
-  return(
+  return (
     <S.Container>
-      <Button 
-      text={translate('SCREEN.LOGIN.LOGIN')} 
-      paddingVertical={0.02}
-      onPress={() => {}}/>
-      <TouchableOpacity text={translate('SCREEN.LOGIN.SIGNUP')} onPress={() => { navigationService.navigate(Stacks.AuthStack.Signup)}} />
+      <Button
+        testID='login'
+        text={translate('SCREEN.LOGIN.LOGIN')}
+        paddingVertical={0.02}
+        onPress={() => { }}
+      />
+      <Button
+        testID='signup'
+        text={translate('SCREEN.LOGIN.SIGNUP')}
+        onPress={() => { navigationService.navigate('Signup') }} />
     </S.Container>
   )
 }
