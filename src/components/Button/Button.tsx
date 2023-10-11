@@ -7,7 +7,7 @@ interface IButtonProps {
   text: string,
   textStyle?: TextStyle,
   buttonStyle?: ViewStyle,
-  onPress: () => {},
+  onPress: () => void,
   disable?: boolean,
   marginVertical?: number,
   marginHorizontal?: number,
@@ -46,7 +46,7 @@ const Button: React.FC<IButtonProps> = ({
       paddingHorizontal={paddingHorizontal}
       paddingVertical={paddingVertical}
     >
-      <Text text={text} style={textStyle} />
+      <Text text={text} style={{color: 'white', ...textStyle}} />
     </S.Touch>
   )
 

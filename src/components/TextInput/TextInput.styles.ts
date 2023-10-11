@@ -1,5 +1,5 @@
-import { Window } from '@src/config/variables';
-import styled from 'styled-components/native';
+import { Window } from "@src/config/variables";
+import styled from "styled-components/native";
 
 interface IProps {
   marginVertical?: number,
@@ -10,10 +10,9 @@ interface IProps {
   paddingVertical?: number
 }
 
-export const Touch = styled.TouchableOpacity<IProps>`
-background-color: blue;
+export const TextInput = styled.TextInput`
 padding-vertical: ${({ paddingVertical }: IProps) =>
-    paddingVertical ? Window.heightScale(paddingVertical) : Window.heightScale(0.02)}px;
+    paddingVertical ? Window.heightScale(paddingVertical) : Window.heightScale(0.01)}px;
 padding-horizontal: ${({ paddingHorizontal }: IProps) =>
     paddingHorizontal ? Window.widthScale(paddingHorizontal) : Window.widthScale(0.01)}px;
 margin-vertical: ${({ marginVertical }: IProps) =>
@@ -25,6 +24,7 @@ margin-bottom: ${({ marginBottom }: IProps) =>
 margin-top: ${({ marginTop }: IProps) =>
     marginTop ? Window.widthScale(marginTop) : Window.widthScale(0.01)}px;
 border-radius: ${Window.widthScale(0.01)}px;
-justify-content: center;
-align-items: center;
-`
+border-width: 1px;
+`;
+
+export const Container = styled.View``
