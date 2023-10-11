@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from './Button.styles';
 import Text from '@components/Text/Text';
 import { TextStyle, ViewStyle } from 'react-native';
+import { DefaultTheme } from '@src/config/theme';
 
 interface IButtonProps {
   text: string,
@@ -46,7 +47,8 @@ const Button: React.FC<IButtonProps> = ({
       paddingHorizontal={paddingHorizontal}
       paddingVertical={paddingVertical}
     >
-      <Text text={text} style={{color: 'white', ...textStyle}} />
+      <Text text={text} 
+      style={{color: DefaultTheme.button.primaryTextColor, ...textStyle}} />
     </S.Touch>
   )
 

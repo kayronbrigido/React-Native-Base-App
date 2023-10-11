@@ -1,3 +1,4 @@
+import { DefaultTheme } from '@src/config/theme';
 import { Window } from '@src/config/variables';
 import styled from 'styled-components/native';
 
@@ -11,7 +12,7 @@ interface IProps {
 }
 
 export const Touch = styled.TouchableOpacity<IProps>`
-background-color: blue;
+background-color: ${DefaultTheme.button.primaryColor};
 padding-vertical: ${({ paddingVertical }: IProps) =>
     paddingVertical ? Window.heightScale(paddingVertical) : Window.heightScale(0.02)}px;
 padding-horizontal: ${({ paddingHorizontal }: IProps) =>
